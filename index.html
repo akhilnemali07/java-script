@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <h1>My Profile</h1>
+    <img id="avatar" style="width: 250px; height: 250px; border-radius: 50%;" src="https://wallpapercave.com/wp/wp1859026.jpg" alt="Avatar">
+    <script>
+        const profile = {
+            name: 'Akhil reddy nemali',
+            age: 26,
+            sex: 'Male',
+            occupation: 'Full Stack  Developer',
+            job_location: 'connecticut',
+            education: {
+                undergraduate: {
+                    college: 'Vignan university',
+                    course: 'electronics',
+                    year: 2019
+                },
+                graduate: {
+                    college:'Sacred heart university',
+                    course: 'Computer science',
+                    year: 2023
+                }
+                
+            },
+            technical_skills: ['Full-Stack Development', 'Microservices', 'data driven systems', 'API development'],
+            hobbies: ['Cricket', 'Cooking', 'Travelling','Music', 'Dance'],
+            languages: ['Java','JavaScript', 'Python'],
+            avatar: 'https://wallpapercave.com/wp/wp1859026.jpg'
+        };
+        console.log(profile);
+        console.log('Last Hobby: ' + profile.hobbies[4]);
+    </script>
+</body>
+
+</html>
