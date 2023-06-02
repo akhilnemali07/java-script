@@ -1,0 +1,31 @@
+<html>
+
+<body>
+   <h1> Sending Amount</h1>
+</body>
+<script>
+    let envinorment = "dev";
+    let amount = 100;
+    let sendingamount=0;
+
+    if (envinorment == 'dev') {
+        sendingamount = amount+ amount * 0.1;
+    }
+    else if (envinorment == 'test') {
+        sendingamount = amount+ amount * 0.2;
+    }
+    else if (envinorment == 'stage') {
+        sendingamount = amount+ amount * 0.3;
+    }
+    else if (envinorment == 'prod') {
+        sendingamount = amount+ amount * 0.05;
+    }
+    else{
+        document.write("you enter invalid");
+
+    }
+    console.log(sendingamount);
+
+</script>
+
+</html>
